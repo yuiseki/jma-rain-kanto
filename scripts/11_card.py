@@ -97,7 +97,7 @@ configs:
 
 Rainfall of the stations of the Japan Meteorological Agency (JMA) in the Kanto region, 1974-01-01 to 2026-09-30, with the JMA's
 flags, as Parquet, one file per prefecture. This version has {len(prefs)} prefectures: {pref_list}; {nd:,} station-days of daily
-values and {nh:,} station-hours of hourly values, {len(st)} stations. 栃木県 (41), 群馬県 (42) and 東京都 (44) are to be added; Tokyo is
+values and {nh:,} station-hours of hourly values, {len(st)} stations. 東京都 (44) is to be added; Tokyo is
 already published as [jma-rain-tokyo](https://huggingface.co/datasets/yuiseki/jma-rain-tokyo) (1974 to 2025).
 
 Chiba is also published alone as [jma-rain-chiba](https://huggingface.co/datasets/yuiseki/jma-rain-chiba), with the reason given there
@@ -121,7 +121,7 @@ Parquet of a prefecture is rebuilt from its latest fetch. October 2026 is not in
   daily values (`hourly_plan_<NN>.tsv`; a request of ten years was refused with HTTP 500 in the Tokyo fetch); 2026 is January to September.
   The CSVs are kept unchanged in `raw/<date>/pref=<NN>/hourly/<station>/<year>.csv`.
 - Fetch dates: Chiba 2026-10-30 (1974 to 2025) and 2026-10-31 (daily to 2026-09 and hourly 2026), in the folder `raw/2026-10-30/`;
-  Ibaraki, Saitama and Kanagawa 2026-10-31, in `raw/2026-10-31/`. The time of each CSV is in its first line and in
+  Ibaraki, Tochigi, Gunma, Saitama and Kanagawa 2026-10-31, in `raw/2026-10-31/`. The time of each CSV is in its first line and in
   `parquet/daily_files/` and `parquet/hourly_files/`. Every raw file has its sha256 in `raw/<date>/pref=<NN>/MANIFEST.json`.
 
 ## Files
@@ -176,7 +176,7 @@ The hourly table has the hours of the years requested for each station only; 202
 General: the AMeDAS stations start in 1976 or later (the weather stations in 1974); the 10 minute maximum of the AMeDAS stations
 starts in 2008 or 2009 (the weather stations: 1974). The station list gives the present positions only; past positions are not in the
 data. The daily greatest 1 hour amount is measured over any 60 minutes, not only from the hour (this reading is not confirmed by the
-JMA's text). The JMA can correct past values: a later fetch of the same request is not guaranteed to return the same CSV (Chiba 1974 to
+JMA's text). Several mountain stations of Tochigi and Gunma have thousands of missing days; for 八溝山 (a0330, Tochigi), measured on 2026-10-31, the missing days fall in November to April (930 of 930 days in January, 734 of 900 in November, 870 of 900 in April, 7 of 961 in July), that is, the record has a winter gap; the data do not state a reason, and the other stations were not checked. The JMA can correct past values: a later fetch of the same request is not guaranteed to return the same CSV (Chiba 1974 to
 2025 did not change between 2026-10-30 and 2026-10-31).
 
 {chr(10).join(issues)}
@@ -209,7 +209,7 @@ Credit: 出典：気象庁ホームページ「過去の気象データ・ダウ
         f"prefectures: {prefs}\n"
         "fetches:\n"
         "  pref=45 (Chiba): raw/2026-10-30/pref=45, 2026-10-30 and 2026-10-31\n"
-        "  pref=40, 43, 46 (Ibaraki, Saitama, Kanagawa): raw/2026-10-31/pref=<NN>, 2026-10-31\n"
+        "  pref=40, 41, 42, 43, 46 (Ibaraki, Tochigi, Gunma, Saitama, Kanagawa): raw/2026-10-31/pref=<NN>, 2026-10-31\n"
         f"rows:\n  daily: {nd}\n  hourly: {nh}\n  stations: {len(st)}\n"
     )
     print(len(card), "characters")
