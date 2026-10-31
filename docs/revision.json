@@ -1,0 +1,31 @@
+{
+ "repo": "yuiseki/jma-rain-kanto",
+ "revision": "e7064e30dabf6fd3bd5fa8d5e01d8b63f69a3a5b",
+ "pushed": "2026-10-31T05:45:32+00:00",
+ "sha256": {
+  "README.md": "8041e3afe3338bd84ff8bdf2190ee5f2ea87fac31e19cfb299f32e65fd5ce73c",
+  "LICENSE": "1209ca95e30e86c5d5fa4a949384c7ac8b053e915d909c4d67ed7c728b1e0cd2",
+  "parquet/daily/pref=40.parquet": "37a2ef65fc74e9ba0726c6dfe98a476e7d61d591f1053edca5da836ec9896a40",
+  "parquet/daily/pref=43.parquet": "e695e8f45079f9379c1f3475d4ad9a1e03497bf4e76e65aba978d31defe72c07",
+  "parquet/daily/pref=45.parquet": "f16548b6c49c41fc4b84317c0430dee817ad8783abe9d10479944ac272d1755d",
+  "parquet/daily/pref=46.parquet": "3e0eca977333f4a3bb63a5aead3e7236e70ca3c8a5e5212c089f0f453f376d92",
+  "parquet/daily_files/pref=40.parquet": "dea7f659718c7b8fe7da002c9f742926cb7f4da08c9bad2a80bf8678eff0161d",
+  "parquet/daily_files/pref=43.parquet": "234b0fd74ecf41d0436c8b9084e0ff18fdca6100242e77e9ee733d737f2f5135",
+  "parquet/daily_files/pref=45.parquet": "33427ceca9ec4c03cf44a38426d4c0c348a99f080bd1e642e262c17bf8d256f5",
+  "parquet/daily_files/pref=46.parquet": "fb4d316a07fa547b01b38432d96810d37cecb803b89e6c76db50f631ec6fb981",
+  "parquet/hourly/pref=40.parquet": "c21ffe1ac695ff850eb28a3049690b2a2606db97a130d16ac25e81fd18f01983",
+  "parquet/hourly/pref=43.parquet": "37f50ac7fc784655b5d225e6181f25361dc818114ba8ab1b1ef24f7b0a2239c1",
+  "parquet/hourly/pref=45.parquet": "a7d93fd20b8ad9b1c100b0e0fc1c99620f44f3a036598b2e47674dceffc1874e",
+  "parquet/hourly/pref=46.parquet": "64e1bf876fc7cb8386c1649e901ba810d5f8fa2b1e311164fd367cc8e8d0b53e",
+  "parquet/hourly_files/pref=40.parquet": "43662918b057932a6e6af50c6aaef72fe5b2e109caa9b9cdfa7db68063cc5836",
+  "parquet/hourly_files/pref=43.parquet": "432a559eb96ee2c114671d786e7e95534ded136674798d18904e3e45244853cd",
+  "parquet/hourly_files/pref=45.parquet": "b22abadc698f6042032cceb6d7d93b66edb356e4d6ead5b28bf4e0babdcf4ff2",
+  "parquet/hourly_files/pref=46.parquet": "180da856a382c14673cdf540b5adf1b2974d926a4975fd07607d45140efd0966",
+  "parquet/stations/pref=40.parquet": "0a9c82b0089e0c0c9e452b3e54dab81fd9ef308d90b70d7e83c0de5183bde720",
+  "parquet/stations/pref=43.parquet": "b7d9f7fbfcabf94e8c6d82ac20140dc24119d87d2bea42d5cb19b1bacee1775f",
+  "parquet/stations/pref=45.parquet": "52a32b3c8521f10b5ca54cce85c1dc6d9c81e40c75b369f7a4cbeb4c83f49533",
+  "parquet/stations/pref=46.parquet": "0c7b5965899f02345f66b0db8e168f91ac1dd783053ca489010a7b83e10dcb58",
+  "parquet/stations.parquet": "7cff4d5d976c3075423025c692f4ad15a3c58943c57da483f0074cca8e2f63b3",
+  "parquet/tables.json": "ffab918117eaec5d9eb952c191d49dbcd5c3b71fda4d3b2d0532e9d44ca9d1ba"
+ }
+}

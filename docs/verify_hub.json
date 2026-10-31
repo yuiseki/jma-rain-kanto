@@ -1,0 +1,279 @@
+{
+ "repo": "yuiseki/jma-rain-kanto",
+ "revision": "e7064e30dabf6fd3bd5fa8d5e01d8b63f69a3a5b",
+ "files_checked": 24,
+ "files_on_hub": 3520,
+ "tables": {
+  "parquet/daily/pref=40.parquet": {
+   "rows": 539448,
+   "non_null": {
+    "station_id": 539448,
+    "date": 539448,
+    "precip_mm": 423320,
+    "precip_nophen": 38532,
+    "precip_quality": 539448,
+    "precip_homog": 539448,
+    "max1h_mm": 423316,
+    "max1h_nophen": 38527,
+    "max1h_quality": 539448,
+    "max1h_homog": 539448,
+    "max10m_mm": 180102,
+    "max10m_nophen": 38527,
+    "max10m_quality": 539448,
+    "max10m_homog": 539448,
+    "pref": 539448
+   }
+  },
+  "parquet/daily/pref=43.parquet": {
+   "rows": 288990,
+   "non_null": {
+    "station_id": 288990,
+    "date": 288990,
+    "precip_mm": 256297,
+    "precip_nophen": 38532,
+    "precip_quality": 288990,
+    "precip_homog": 288990,
+    "max1h_mm": 256306,
+    "max1h_nophen": 38529,
+    "max1h_quality": 288990,
+    "max1h_homog": 288990,
+    "max10m_mm": 116214,
+    "max10m_nophen": 38530,
+    "max10m_quality": 288990,
+    "max10m_homog": 288990,
+    "pref": 288990
+   }
+  },
+  "parquet/daily/pref=45.parquet": {
+   "rows": 346788,
+   "non_null": {
+    "station_id": 346788,
+    "date": 346788,
+    "precip_mm": 324482,
+    "precip_nophen": 77053,
+    "precip_quality": 346788,
+    "precip_homog": 346788,
+    "max1h_mm": 324447,
+    "max1h_nophen": 77016,
+    "max1h_quality": 346788,
+    "max1h_homog": 346788,
+    "max10m_mm": 169670,
+    "max10m_nophen": 77011,
+    "max10m_quality": 346788,
+    "max10m_homog": 346788,
+    "pref": 346788
+   }
+  },
+  "parquet/daily/pref=46.parquet": {
+   "rows": 231192,
+   "non_null": {
+    "station_id": 231192,
+    "date": 231192,
+    "precip_mm": 204186,
+    "precip_nophen": 19266,
+    "precip_quality": 231192,
+    "precip_homog": 231192,
+    "max1h_mm": 204186,
+    "max1h_nophen": 19262,
+    "max1h_quality": 231192,
+    "max1h_homog": 231192,
+    "max10m_mm": 84220,
+    "max10m_nophen": 19260,
+    "max10m_quality": 231192,
+    "max10m_homog": 231192,
+    "pref": 231192
+   }
+  },
+  "parquet/daily_files/pref=40.parquet": {
+   "rows": 28,
+   "non_null": {
+    "station_id": 28,
+    "file": 28,
+    "downloaded": 28,
+    "rows": 28
+   }
+  },
+  "parquet/daily_files/pref=43.parquet": {
+   "rows": 15,
+   "non_null": {
+    "station_id": 15,
+    "file": 15,
+    "downloaded": 15,
+    "rows": 15
+   }
+  },
+  "parquet/daily_files/pref=45.parquet": {
+   "rows": 18,
+   "non_null": {
+    "station_id": 18,
+    "file": 18,
+    "downloaded": 18,
+    "rows": 18
+   }
+  },
+  "parquet/daily_files/pref=46.parquet": {
+   "rows": 12,
+   "non_null": {
+    "station_id": 12,
+    "file": 12,
+    "downloaded": 12,
+    "rows": 12
+   }
+  },
+  "parquet/hourly/pref=40.parquet": {
+   "rows": 10345728,
+   "non_null": {
+    "station_id": 10345728,
+    "time_end": 10345728,
+    "precip_mm": 10153074,
+    "precip_nophen": 924552,
+    "precip_quality": 10345728,
+    "precip_homog_in_file": 10345728,
+    "pref": 10345728
+   }
+  },
+  "parquet/hourly/pref=43.parquet": {
+   "rows": 6245568,
+   "non_null": {
+    "station_id": 6245568,
+    "time_end": 6245568,
+    "precip_mm": 6148971,
+    "precip_nophen": 924675,
+    "precip_quality": 6245568,
+    "precip_homog_in_file": 6245568,
+    "pref": 6245568
+   }
+  },
+  "parquet/hourly/pref=45.parquet": {
+   "rows": 8025000,
+   "non_null": {
+    "station_id": 8025000,
+    "time_end": 8025000,
+    "precip_mm": 7783046,
+    "precip_nophen": 1848714,
+    "precip_quality": 8025000,
+    "precip_homog_in_file": 8025000,
+    "pref": 8025000
+   }
+  },
+  "parquet/hourly/pref=46.parquet": {
+   "rows": 4919808,
+   "non_null": {
+    "station_id": 4919808,
+    "time_end": 4919808,
+    "precip_mm": 4898129,
+    "precip_nophen": 462303,
+    "precip_quality": 4919808,
+    "precip_homog_in_file": 4919808,
+    "pref": 4919808
+   }
+  },
+  "parquet/hourly_files/pref=40.parquet": {
+   "rows": 1186,
+   "non_null": {
+    "station_id": 1186,
+    "file": 1186,
+    "downloaded": 1186,
+    "rows": 1186
+   }
+  },
+  "parquet/hourly_files/pref=43.parquet": {
+   "rows": 716,
+   "non_null": {
+    "station_id": 716,
+    "file": 716,
+    "downloaded": 716,
+    "rows": 716
+   }
+  },
+  "parquet/hourly_files/pref=45.parquet": {
+   "rows": 920,
+   "non_null": {
+    "station_id": 920,
+    "file": 920,
+    "downloaded": 920,
+    "rows": 920
+   }
+  },
+  "parquet/hourly_files/pref=46.parquet": {
+   "rows": 564,
+   "non_null": {
+    "station_id": 564,
+    "file": 564,
+    "downloaded": 564,
+    "rows": 564
+   }
+  },
+  "parquet/stations/pref=40.parquet": {
+   "rows": 28,
+   "non_null": {
+    "station_id": 28,
+    "station_name": 28,
+    "pref": 28,
+    "kind": 28,
+    "lat": 28,
+    "lon": 28,
+    "elevation_m": 28,
+    "ended": 5,
+    "kansoku": 28
+   }
+  },
+  "parquet/stations/pref=43.parquet": {
+   "rows": 15,
+   "non_null": {
+    "station_id": 15,
+    "station_name": 15,
+    "pref": 15,
+    "kind": 15,
+    "lat": 15,
+    "lon": 15,
+    "elevation_m": 15,
+    "ended": 1,
+    "kansoku": 15
+   }
+  },
+  "parquet/stations/pref=45.parquet": {
+   "rows": 18,
+   "non_null": {
+    "station_id": 18,
+    "station_name": 18,
+    "pref": 18,
+    "kind": 18,
+    "lat": 18,
+    "lon": 18,
+    "elevation_m": 18,
+    "ended": 0,
+    "kansoku": 18
+   }
+  },
+  "parquet/stations/pref=46.parquet": {
+   "rows": 12,
+   "non_null": {
+    "station_id": 12,
+    "station_name": 12,
+    "pref": 12,
+    "kind": 12,
+    "lat": 12,
+    "lon": 12,
+    "elevation_m": 12,
+    "ended": 1,
+    "kansoku": 12
+   }
+  },
+  "parquet/stations.parquet": {
+   "rows": 73,
+   "non_null": {
+    "station_id": 73,
+    "station_name": 73,
+    "pref": 73,
+    "kind": 73,
+    "lat": 73,
+    "lon": 73,
+    "elevation_m": 73,
+    "ended": 7,
+    "kansoku": 73
+   }
+  }
+ },
+ "problems": []
+}
