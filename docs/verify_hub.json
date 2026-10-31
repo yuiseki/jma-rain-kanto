@@ -1,8 +1,8 @@
 {
  "repo": "yuiseki/jma-rain-kanto",
- "revision": "e7064e30dabf6fd3bd5fa8d5e01d8b63f69a3a5b",
- "files_checked": 24,
- "files_on_hub": 3520,
+ "revision": "2f06b16b71fcf82c2b6cb2bfc6183dc55a82ac42",
+ "files_checked": 34,
+ "files_on_hub": 5714,
  "tables": {
   "parquet/daily/pref=40.parquet": {
    "rows": 539448,
@@ -22,6 +22,46 @@
     "max10m_quality": 539448,
     "max10m_homog": 539448,
     "pref": 539448
+   }
+  },
+  "parquet/daily/pref=41.parquet": {
+   "rows": 481650,
+   "non_null": {
+    "station_id": 481650,
+    "date": 481650,
+    "precip_mm": 364340,
+    "precip_nophen": 38514,
+    "precip_quality": 481650,
+    "precip_homog": 481650,
+    "max1h_mm": 364215,
+    "max1h_nophen": 38387,
+    "max1h_quality": 481650,
+    "max1h_homog": 481650,
+    "max10m_mm": 149738,
+    "max10m_nophen": 38387,
+    "max10m_quality": 481650,
+    "max10m_homog": 481650,
+    "pref": 481650
+   }
+  },
+  "parquet/daily/pref=42.parquet": {
+   "rows": 462384,
+   "non_null": {
+    "station_id": 462384,
+    "date": 462384,
+    "precip_mm": 344804,
+    "precip_nophen": 19266,
+    "precip_quality": 462384,
+    "precip_homog": 462384,
+    "max1h_mm": 344813,
+    "max1h_nophen": 19266,
+    "max1h_quality": 462384,
+    "max1h_homog": 462384,
+    "max10m_mm": 124041,
+    "max10m_nophen": 19266,
+    "max10m_quality": 462384,
+    "max10m_homog": 462384,
+    "pref": 462384
    }
   },
   "parquet/daily/pref=43.parquet": {
@@ -93,6 +133,24 @@
     "rows": 28
    }
   },
+  "parquet/daily_files/pref=41.parquet": {
+   "rows": 25,
+   "non_null": {
+    "station_id": 25,
+    "file": 25,
+    "downloaded": 25,
+    "rows": 25
+   }
+  },
+  "parquet/daily_files/pref=42.parquet": {
+   "rows": 24,
+   "non_null": {
+    "station_id": 24,
+    "file": 24,
+    "downloaded": 24,
+    "rows": 24
+   }
+  },
   "parquet/daily_files/pref=43.parquet": {
    "rows": 15,
    "non_null": {
@@ -130,6 +188,30 @@
     "precip_quality": 10345728,
     "precip_homog_in_file": 10345728,
     "pref": 10345728
+   }
+  },
+  "parquet/hourly/pref=41.parquet": {
+   "rows": 9276384,
+   "non_null": {
+    "station_id": 9276384,
+    "time_end": 9276384,
+    "precip_mm": 8733204,
+    "precip_nophen": 920779,
+    "precip_quality": 9276384,
+    "precip_homog_in_file": 9276384,
+    "pref": 9276384
+   }
+  },
+  "parquet/hourly/pref=42.parquet": {
+   "rows": 9280848,
+   "non_null": {
+    "station_id": 9280848,
+    "time_end": 9280848,
+    "precip_mm": 8263681,
+    "precip_nophen": 462357,
+    "precip_quality": 9280848,
+    "precip_homog_in_file": 9280848,
+    "pref": 9280848
    }
   },
   "parquet/hourly/pref=43.parquet": {
@@ -177,6 +259,24 @@
     "rows": 1186
    }
   },
+  "parquet/hourly_files/pref=41.parquet": {
+   "rows": 1063,
+   "non_null": {
+    "station_id": 1063,
+    "file": 1063,
+    "downloaded": 1063,
+    "rows": 1063
+   }
+  },
+  "parquet/hourly_files/pref=42.parquet": {
+   "rows": 1063,
+   "non_null": {
+    "station_id": 1063,
+    "file": 1063,
+    "downloaded": 1063,
+    "rows": 1063
+   }
+  },
   "parquet/hourly_files/pref=43.parquet": {
    "rows": 716,
    "non_null": {
@@ -216,6 +316,34 @@
     "elevation_m": 28,
     "ended": 5,
     "kansoku": 28
+   }
+  },
+  "parquet/stations/pref=41.parquet": {
+   "rows": 25,
+   "non_null": {
+    "station_id": 25,
+    "station_name": 25,
+    "pref": 25,
+    "kind": 25,
+    "lat": 25,
+    "lon": 25,
+    "elevation_m": 25,
+    "ended": 6,
+    "kansoku": 25
+   }
+  },
+  "parquet/stations/pref=42.parquet": {
+   "rows": 24,
+   "non_null": {
+    "station_id": 24,
+    "station_name": 24,
+    "pref": 24,
+    "kind": 24,
+    "lat": 24,
+    "lon": 24,
+    "elevation_m": 24,
+    "ended": 7,
+    "kansoku": 24
    }
   },
   "parquet/stations/pref=43.parquet": {
@@ -261,17 +389,17 @@
    }
   },
   "parquet/stations.parquet": {
-   "rows": 73,
+   "rows": 122,
    "non_null": {
-    "station_id": 73,
-    "station_name": 73,
-    "pref": 73,
-    "kind": 73,
-    "lat": 73,
-    "lon": 73,
-    "elevation_m": 73,
-    "ended": 7,
-    "kansoku": 73
+    "station_id": 122,
+    "station_name": 122,
+    "pref": 122,
+    "kind": 122,
+    "lat": 122,
+    "lon": 122,
+    "elevation_m": 122,
+    "ended": 20,
+    "kansoku": 122
    }
   }
  },
