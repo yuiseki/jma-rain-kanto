@@ -34,7 +34,11 @@ def main() -> int:
         shutil.copyfile(stage / src, PQ / dst)
         assert sha(stage / src) == sha(PQ / dst), dst
     parts = sorted((PQ / "stations").glob("pref=*.parquet"))
-    pq.write_table(pa.concat_tables([pq.read_table(p) for p in parts]), PQ / "stations.parquet", compression="zstd")
+    # a prefecture whose stations all lack an end date has `ended` typed null; give every part the same type
+    unify = lambda t: t.set_column(t.schema.get_field_index("ended"), "ended", t["ended"].cast(pa.date32()))  # noqa: E731
+    pq.write_table(
+        pa.concat_tables([unify(pq.read_table(p)) for p in parts]), PQ / "stations.parquet", compression="zstd"
+    )
     tables = {}
     for kind in ("daily", "hourly"):
         for p in sorted((PQ / kind).glob("pref=*.parquet")):
